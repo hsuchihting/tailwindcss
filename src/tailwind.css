@@ -1,0 +1,15 @@
+:root {
+    --color: #fff;
+    --bgc: #3e3e3e;
+    --fontSize: 24px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+    color: var(--color);
+    background-color: var(--bgc);
+    font-size: var(--fontSize);
+}
