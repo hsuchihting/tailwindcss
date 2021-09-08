@@ -1,15 +1,20 @@
 :root {
-    --color: #fff;
-    --bgc: #3e3e3e;
-    --fontSize: 24px;
+  --color: #fff;
+  --bgc: #3e3e3e;
+  --fontSize: 24px;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply dark:bg-black; 
+  }
+}
 .title {
-    color: var(--color);
-    background-color: var(--bgc);
-    font-size: var(--fontSize);
+  color: var(--color);
+  background-color: var(--bgc);
+  font-size: var(--fontSize);
 }
