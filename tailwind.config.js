@@ -1,14 +1,12 @@
 module.exports = {
-    mode: "jit", //加在這裡
-    purge: ["./**/*.html", "./src/**/*.css"],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        extend: {},
-    },
-    variants: {
-        extend: {
-            // ringWidth: ["active"], //加在這裡
-        },
-    },
-    plugins: [],
+  mode: "jit",
+  purge: ["./**/*.html", "./src/**/*.css", "./js/**/*.js"], //要加上 JS 的路徑
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 };
