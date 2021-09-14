@@ -1,21 +1,22 @@
-// let light = document.getElementById("light");
-// let dark = document.getElementById("dark");
+let loginBtn = document.getElementById("login");
+let modal = document.getElementById("modal");
+let closeBtn = document.getElementById("close");
 
-// light.addEventListener("click", function () {
-//   document.documentElement.classList.remove("dark");
-// });
+loginBtn.addEventListener("click", function () {
+    modal.classList.remove("opacity-0", "pointer-events-none");
+});
 
-// dark.addEventListener("click", function () {
-//   document.documentElement.classList.add("dark");
-// });
+closeBtn.addEventListener("click", function () {
+    modal.classList.add("opacity-0", "pointer-events-none");
+});
 
 function renderList(id) {
-  const listUl = document.getElementById(id);
-  let originColor = "text-green-400";
-  if (id === "list2") {
-    originColor = "text-white";
-  }
-  const templateLi = `
+    const listUl = document.getElementById(id);
+    let originColor = "text-green-400";
+    if (id === "list2") {
+        originColor = "text-white";
+    }
+    const templateLi = `
       <li class="flex items-center mt-4">
         <i class="far fa-check-circle ${originColor}"></i>
          <span
@@ -23,11 +24,11 @@ function renderList(id) {
       </li>
   `;
 
-  let str = "";
-  for (let i = 0; i < 5; i++) {
-    str = str + templateLi;
-  }
-  listUl.innerHTML = str;
+    let str = "";
+    for (let i = 0; i < 5; i++) {
+        str = str + templateLi;
+    }
+    listUl.innerHTML = str;
 }
 
 renderList("list1");
