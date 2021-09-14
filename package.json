@@ -4,10 +4,11 @@
   "description": "",
   "main": "tailwind.config.js",
   "dependencies": {
-    "jquery": "^3.6.0",
     "tailwindcss": "^2.2.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.3.3"
+  },
   "scripts": {
     "build": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css"
   },

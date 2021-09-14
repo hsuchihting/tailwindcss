@@ -14,7 +14,7 @@
         <title>tailwindcss</title>
     </head>
 
-    <body class="bg-[#eee] relative">
+    <body class="bg-[#eee] relative lg:h-screen">
         <div class="p-4 lg:p-8">
             <div class="flex justify-between items-start lg:max-w-[1280px] lg:mx-auto">
                 <div>
@@ -156,18 +156,31 @@
                 flex
                 justify-center
                 items-start
+                lg:items-center
+                duration-300
                 opacity-0
                 pointer-events-none
-                duration-300
             "
         >
-            <div class="w-[90%] p-4 mt-20 bg-white rounded-md shadow-md">
+            <div class="w-[90%] p-4 mt-20 lg:mt-0 bg-white rounded-md shadow-md lg:w-[40%]">
                 <h2 class="text-center text-purple-500 font-bold mb-10 text-3xl">登入您的帳號</h2>
                 <p class="mb-2">電子信箱</p>
-                <input type="email" class="border-2 border-gray-400 focus:ring-2 w-full p-2 rounded-md" />
+                <input type="email" class="focus:ring-purple-400 focus:border-purple-400 w-full p-2 rounded-md" />
                 <p class="mt-4 mb-2">密碼</p>
-                <input type="password" class="border-2 border-gray-400 focus:ring-2 w-full p-2 rounded-md" />
+                <input type="password" class="focus:ring-purple-400 focus:border-purple-400 w-full p-2 rounded-md" />
                 <a href="javascript:void(0)" class="block mt-2 text-blue-400">忘記密碼</a>
+
+                <div class="mt-4">
+                    <select class="focus:ring-purple-400 focus:border-purple-400 w-full p-2 rounded-md">
+                        <option value="">---請選擇語言---</option>
+                        <option value="1">繁體中文</option>
+                        <option value="2">English</option>
+                    </select>
+                </div>
+                <div class="mt-4 flex items-center">
+                    <input class="mr-2 focus:ring-purple-400 text-purple-400" type="checkbox" name="checkbox" id="" />
+                    <label for="checkbox">記住密碼</label>
+                </div>
                 <button
                     id="close"
                     class="

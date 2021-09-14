@@ -1,6 +1,6 @@
 module.exports = {
   mode: "jit",
-  purge: ["./**/*.html", "./src/**/*.css", "./js/**/*.js"], //要加上 JS 的路徑
+  purge: ["./**/*.html", "./src/**/*.css", "./js/**/*.js"], 
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -8,5 +8,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'), //加在這裡
+  ],
 };
